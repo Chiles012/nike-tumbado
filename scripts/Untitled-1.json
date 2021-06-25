@@ -1,0 +1,21 @@
+{
+  headless: false,
+  devtools: false,
+  windowSize: { width: 500, heigth: 500 },
+  target: 'https://www.groupon.com',
+  hijack_script_path: 'scripts/akamai-1.68-nike.js',
+  helpers: true,
+  script_name_includes: '/staticweb/',
+  main: { node: "console.log('page pitos bien venudos')" },
+  GET: {
+    page: "console.log('get bien mamalon');",
+    node: "console.log('perras');"
+  },
+  POST: {
+    page: "console.log('post bien mamalon');",
+    node: " console.log('\\n##########################'); console.log('sensor_data: ' + req.postData()); "
+  },
+  response: {
+    node: " console.log('\\n##########################'); console.log('_abck: ' + await page.cookies().then(jar => cookie('_abck', jar))); "
+  }
+}
