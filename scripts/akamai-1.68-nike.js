@@ -583,6 +583,7 @@ var _cf = _cf || [],
                     });
                 },
                 n = a.map(function (t, a) {
+                  console.log(t, a);   
                   return e(t, a);
                 });
               Promise.all(n).then(function () {
@@ -2195,7 +2196,8 @@ if (
           var t = 0;
           t = Date.now ? Date.now() : +new Date();
           var e = a.data();
-          a.fpValstr = e.replace(/\"/g, '\\\\"');
+          // a.fpValstr = e.replace(/\"/g, '\\\\"');
+          a.fpValstr = "-1752250632;-915298718;dis;,7,8;true;true;true;300;true;24;24;true;false;-1";
           var n = 0;
           (n = Date.now ? Date.now() : +new Date()), (a.td = n - t);
         } catch (t) {}

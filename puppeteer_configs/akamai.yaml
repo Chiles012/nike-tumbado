@@ -2,14 +2,14 @@
 headless: false
 devtools: false
 windowSize:
-  width: 500
-  heigth: 500
+  width: 1000
+  heigth: 1000
 target: https://www.nike.com
 
 hijack_script_path: scripts/akamai-1.68-nike.js
 
 helpers: true
-script_name_includes: pJjuho/bM/gP/jUcn/dk1jei0poY/Y9G3rVpXwu/Clx4AQ/MgQ/LFXd9KXQ
+script_name_includes: Nw35gX2omkX3b4p0GN6y/7w9rmk8S/DWRZTi91cQc/HH/BQSDsWJkY
 main:
   node : "console.log('page pitos bien venudos')"
 
